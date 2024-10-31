@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helpbook Foundation | Adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="logo-box-container">
+                <div class="parallelogram parallelogram-bottom"></div>
+                <div class="parallelogram parallelogram-middle"></div>
+                <div class="parallelogram parallelogram-top">
+                    <a href="./">
+                    <img src="./assets/logo.png" alt="HelpBook Logo" class="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-links">
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./education.html">Education</a>
+                <a href="./environment.html">Environment</a>
+                <a href="./adoption.html">Animals</a>
+                <a href="./food.html">Food & Health</a>
+                
+            </div>
+        </div>
+        <a href="./donate.html" class="help-now"><i class="fa-solid fa-heart"></i>&nbsp;Help Now</a>
+        <div class="barsbtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    
+    <div class="navbarBg"></div>
+    
+    <nav class="navbarMob">
+        <ul>
+            <li><a href="./">Home</a><div class="line"></div></li>
+            <li><a href="./about.html">About</a><div class="line"></div></li>
+            <li><a href="./contact.html">Contact</a><div class="line"></div></li>
+            <li><a href="./education.html">Education</a><div class="line"></div></li>
+            <li><a href="./environment.html">Environment</a><div class="line"></div></li>
+            <li><a href="./adoption.html">Animals</a><div class="line"></div></li>
+            <li><a href="./food.html">Food & Health</a><div class="line"></div></li>
+            <li><a href="./donate.html">Donate</a><div class="line"></div></li>
+        </ul>
+        <div class="sepratorSocial"></div>
+        <div class="socialNav">
+            <a href="https://m.facebook.com/profile.php?id=61565408164554"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/the_helpbook/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://chat.whatsapp.com/D2amvjNlcqLCxl68LNdZmI"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </nav>
+    
+    <div class="navclose">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    
+        <style>
+
+            .mainContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+    
+            .form-container {
+                margin-top: 100px;
+                background-color: #fff;
+                border-radius: 10px;
+                max-width: 600px;
+                padding: 30px;
+                width: 100%;
+            }
+    
+            .form-container h2 {
+                color: #333;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+    
+            .form-group {
+                margin-bottom: 20px;
+            }
+    
+            .form-group label {
+                display: block;
+                color: #666;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+    
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+                color: #333;
+            }
+    
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+                border-color: #5cb85c;
+                outline: none;
+                box-shadow: 0 0 6px rgba(92, 184, 92, 0.3);
+            }
+    
+            .submit-btn {
+                display: block;
+                width: 100%;
+                padding: 12px;
+                background-color: #5cb85c;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: center;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            .submit-btn:hover {
+                background-color: #4cae4c;
+            }
+    
+            .form-group textarea {
+                resize: vertical;
+                min-height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="mainContainer">
+    <div class="form-container">
+        <h2>Adopt a Pet</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="petType">Type of Pet</label>
+                <select id="petType" name="petType" required>
+                    <option value="">Select a pet</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Bird">Bird</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Why Do You Want to Adopt?</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    </div>
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#001a24" fill-opacity="1" d="M0,256L120,245.3C240,235,480,213,720,202.7C960,192,1200,192,1320,192L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+
+    <footer>
+        <div class="logo-box-container">
+            <div class="parallelogram parallelogram-bottom"></div>
+            <div class="parallelogram parallelogram-middle"></div>
+            <div class="parallelogram parallelogram-top">
+                <a href="./">
+                <img src="./assets/logo.png" alt="HelpBook Logo" class="logo">
+                </a>
+            </div>
+        </div>
+<div class="about">
+            <div class="heading">About</div>
+            <div class="sepraTwo"></div>
+            <p>The HelpBook Foundation empowers positive change through environmental action, community support, and youth engagement. We focus on education, healthcare, sustainability, and animal welfare, fostering a better future by addressing essential needs with compassion and dedication.
+            </p>
+
+        </div>
+        <div class="links">
+            <div class="heading">Useful Links</div>
+
+            <div class="sepraTwo"></div>
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./environment.html">Environment</a></li>
+                <li><a href="./adoption.html">Animals</a></li>
+                <li><a href="./food.html">Food & Health</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+                <li><a href="./join.html">Be a part of HelpBook</a></li>
+            </ul>
+        </div>
+    <div class="contact">
+        <div class="heading">Contact Us</div>
+        <div class="sepraTwo"></div>
+        <p><i class="fa-solid fa-location-dot"></i>&nbsp;Address:- Will Be added Soon..<br><i class="fa-solid fa-phone"></i>&nbsp;Contact No.: +91 7909402024</p>
+    </div>
+
+
+    </footer>
+
+
+    <div class="foot-social">
+        <div class="sepraThree"></div>
+        <div class="headFootSocial">Social Links</div>
+
+        <div class="containsSocial">
+            <span><a href="https://m.facebook.com/profile.php?id=61565408164554" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></span><div class="sepCircle"></div>
+            <span><a href="https://www.instagram.com/the_helpbook/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></span><div class="sepCircle"></div>
+            <span><a href="https://chat.whatsapp.com/D2amvjNlcqLCxl68LNdZmI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></span>
+        </div>
+
+    </div>
+
+
+    <div class="foot">
+        &copy; Copyright All Right Reserved.
+    </div>
+
+
+    <div class="topBtn">
+    <span id="back-to-top"><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</body>
+
+</html>

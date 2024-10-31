@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helpbook Foundation | Donation Request Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="logo-box-container">
+                <div class="parallelogram parallelogram-bottom"></div>
+                <div class="parallelogram parallelogram-middle"></div>
+                <div class="parallelogram parallelogram-top">
+                    <a href="./">
+                    <img src="./assets/logo.png" alt="HelpBook Logo" class="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-links">
+              <a href="./about.html">About</a>
+              <a href="./contact.html">Contact</a>
+              <a href="./education.html">Education</a>
+              <a href="./environment.html">Environment</a>
+              <a href="./adoption.html">Animals</a>
+              <a href="./food.html">Food & Health</a>
+                
+            </div>
+        </div>
+        <a href="./donate.html" class="help-now"><i class="fa-solid fa-heart"></i>&nbsp;Help Now</a>
+        <div class="barsbtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    
+    <div class="navbarBg"></div>
+    
+    <nav class="navbarMob">
+        <ul>
+            <li><a href="./">Home</a><div class="line"></div></li>
+            <li><a href="./about.html">About</a><div class="line"></div></li>
+            <li><a href="./contact.html">Contact</a><div class="line"></div></li>
+            <li><a href="./education.html">Education</a><div class="line"></div></li>
+            <li><a href="./environment.html">Environment</a><div class="line"></div></li>
+            <li><a href="./adoption.html">Animals</a><div class="line"></div></li>
+            <li><a href="./food.html">Food & Health</a><div class="line"></div></li>
+            <li><a href="./donate.html">Donate</a><div class="line"></div></li>
+        </ul>
+        <div class="sepratorSocial"></div>
+        <div class="socialNav">
+          <a href="https://m.facebook.com/profile.php?id=61565408164554"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/the_helpbook/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://chat.whatsapp.com/D2amvjNlcqLCxl68LNdZmI"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </nav>
+    
+    <div class="navclose">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+  <style>
+    .mainContainer {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .donation-form {
+        margin-top: 100px;
+      width: 100%;
+      max-width: 90%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    .donation-form h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+
+  <div class="mainContainer">
+
+  <form class="donation-form">
+    <h2>Donation Request Form For Student</h2>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age Group</label>
+      <select id="age" name="age" required>
+        <option value="">Select age group</option>
+        <option value="5-10">5-10</option>
+        <option value="10-15">10-15</option>
+        <option value="15-20">15-20</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="item">Item You Need</label>
+      <select id="item" name="item" required>
+        <option value="">Select an item</option>
+        <option value="toys">Toys</option>
+        <option value="books">Books</option>
+        <option value="stationary">Stationary</option>
+        <option value="dress">Dress</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Additional Description</label>
+      <textarea id="description" name="description" placeholder="Please provide more details if necessary"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Request</button>
+  </form>
+
+  </div>
+
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#001a24" fill-opacity="1" d="M0,256L120,245.3C240,235,480,213,720,202.7C960,192,1200,192,1320,192L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+
+    <footer>
+        <div class="logo-box-container">
+            <div class="parallelogram parallelogram-bottom"></div>
+            <div class="parallelogram parallelogram-middle"></div>
+            <div class="parallelogram parallelogram-top">
+                <a href="./">
+                <img src="./assets/logo.png" alt="HelpBook Logo" class="logo">
+                </a>
+            </div>
+        </div>
+<div class="about">
+            <div class="heading">About</div>
+            <div class="sepraTwo"></div>
+            <p>The HelpBook Foundation empowers positive change through environmental action, community support, and youth engagement. We focus on education, healthcare, sustainability, and animal welfare, fostering a better future by addressing essential needs with compassion and dedication.
+            </p>
+
+        </div>
+        <div class="links">
+            <div class="heading">Useful Links</div>
+
+            <div class="sepraTwo"></div>
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./environment.html">Environment</a></li>
+                <li><a href="./adoption.html">Animals</a></li>
+                <li><a href="./food.html">Food & Health</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+                <li><a href="./join.html">Be a part of HelpBook</a></li>
+            </ul>
+        </div>
+    <div class="contact">
+        <div class="heading">Contact Us</div>
+        <div class="sepraTwo"></div>
+        <p><i class="fa-solid fa-location-dot"></i>&nbsp;Address:- Will Be added Soon..<br><i class="fa-solid fa-phone"></i>&nbsp;Contact No.: +91 7909402024</p>
+    </div>
+
+
+    </footer>
+
+
+    <div class="foot-social">
+        <div class="sepraThree"></div>
+        <div class="headFootSocial">Social Links</div>
+
+        <div class="containsSocial">
+          <span><a href="https://m.facebook.com/profile.php?id=61565408164554" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></span><div class="sepCircle"></div>
+          <span><a href="https://www.instagram.com/the_helpbook/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></span><div class="sepCircle"></div>
+          <span><a href="https://chat.whatsapp.com/D2amvjNlcqLCxl68LNdZmI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></span>
+      </div>
+
+    </div>
+
+
+    <div class="foot">
+        &copy; Copyright All Right Reserved.
+    </div>
+
+
+    <div class="topBtn">
+    <span id="back-to-top"><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</body>
+
+</html>
